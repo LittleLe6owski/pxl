@@ -13,6 +13,18 @@
   </body>
 </html>
 
+
+<script>
+    document.getElementById('init_sub').addEventListener('click', function() {
+    try {
+        var akPush = new AKPush();
+        akPush.initSubscription()
+        }
+    catch (e) {
+        console.log(e);
+        }
+    });
+</script>
                         
 <!-- START OF ALTCRAFT PIXEL CODE !-->
 <script type="text/javascript">
